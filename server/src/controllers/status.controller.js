@@ -8,7 +8,6 @@ router.post("/:code", async (req, res) => {
       urlCode: code,
     });
     if (url) {
-      console.log(url);
       return res.json({ url });
     } else {
       return res.status(404).json("No URL Found");
